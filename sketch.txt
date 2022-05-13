@@ -1,0 +1,41 @@
+class Human extend Thread:{
+	int xp;
+	int id;
+	char type;
+	String name;
+	
+	public Human(String name,char type){
+		this.name=name;
+		this.type=type;
+		xp=0;
+	}
+
+
+}
+class Population:{
+	int counter;
+	int state[4];
+
+	public Population(){
+
+		counter=0;
+		state=[0,0,0,0];
+	}
+
+	static class Men extends Human:{
+
+		public Men(String name,char type){
+			this.super(name,type);
+			counter++;
+		}
+	}
+
+	static class Women extends Human:{
+
+		public Men(String name,char type){
+			this.super(name,type);
+			counter++;
+		}
+	}
+
+}
