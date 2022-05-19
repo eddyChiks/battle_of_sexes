@@ -1,4 +1,5 @@
 import java.util.HashMap;
+import java.util.List;
 
 public class Population extends Thread {
     public static int counter;
@@ -11,6 +12,7 @@ public class Population extends Thread {
         state.put('C',0);
         state.put('S',0);
     }
+
 
     public static class Human {
         int xp;
