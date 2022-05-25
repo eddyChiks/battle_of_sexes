@@ -1,5 +1,6 @@
 package project;
 import java.util.List;
+import java.util.Random;
 
 public class Men extends Population.Human {
     public static int counter=1;
@@ -13,7 +14,18 @@ public class Men extends Population.Human {
         men_list.add(m);
     }
 
-    public void run(){
+    public synchronized void run(){
+        Random rand = new Random();
+        try {
+            for (int i =0;i<10;i++){
+                if (isInterrupted()) throw new InterruptedException();
+                sleep(rand.nextInt(40));
+                Women couple = Women.w_queue.remove();
+                couple.meeting(type);
+            }
+        }
+        catch (InterruptedException e){
 
+        }
     }
 }
