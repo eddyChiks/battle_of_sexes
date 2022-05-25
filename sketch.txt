@@ -12,27 +12,27 @@ class Human extend Thread:{
 
 
 }
-class Population:{
+class project.Population:{
 	int counter;
 	int state[4];
 
-	public Population(){
+	public project.Population(){
 
 		counter=0;
 		state=[0,0,0,0];
 	}
 
-	static class Men extends Human:{
+	static class project.Men extends Human:{
 
-		public Men(String name,char type){
+		public project.Men(String name,char type){
 			this.super(name,type);
 			counter++;
 		}
 	}
 
-	static class Women extends Human:{
+	static class project.Women extends Human:{
 
-		public Men(String name,char type){
+		public project.Men(String name,char type){
 			this.super(name,type);
 			counter++;
 		}

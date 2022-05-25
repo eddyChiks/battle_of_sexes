@@ -1,4 +1,12 @@
-public class Main {
+package project;
+import java.lang.invoke.TypeDescriptor;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+
+public class Utils {
     public static double cos_sim(int[]i,int[]j){
         int sum=0;
         float norm_i=0;
@@ -10,9 +18,5 @@ public class Main {
         }
         return sum/(Math.sqrt(norm_i)*Math.sqrt(norm_j));
     }
-    public static void main(String args[]){
-        int[]a={1,2};
-        int[]b={1,3};
-        System.out.println(cos_sim(a,b));
-    }
+
 }
