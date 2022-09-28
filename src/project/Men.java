@@ -23,7 +23,6 @@ public class Men extends Population.Human {
             }
         }
         catch (InterruptedException e){
-            //System.out.println(name+" is out of game!");
         }
     }
 }
