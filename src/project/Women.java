@@ -13,7 +13,6 @@ public class Women extends Population.Human {
     public synchronized void date(Men m){
         birth(m);
         notify();
-        //System.out.println(name+" just met her love "+m.name);
     }
 
     public void birth(Men father) {
@@ -27,7 +26,6 @@ public class Women extends Population.Human {
             woman.start();
         }
         Population.update_hp(father,this);
-        //System.out.println("Congrats "+father.name);
     }
     public synchronized void run(){
         try {
